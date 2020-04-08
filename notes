@@ -1,0 +1,22 @@
+- AR  : assume observations at previous time steps are useful to predict the value at the next time step.
+
+- Once your time series became white noise, you cant get any more information in it 
+
+- Why making our time series stationary ? because the AR in ARIMA is a LINEAR regression model that uses its own lag as predictor
+
+- AR : own data lags | MA : error lags. 
+    Hence ARIMA : PredictedYt = Constant + Linear combination lags of Y (upto p lags) + Linear combination of lagged forecast error (upto q lags)
+    
+- Best scenario if differencing is not needed. Else keep it at its minimum | Check whether data is stationary or not by Augmented Dickey Fuller Test (Not stationary if p-value > 0.05)
+
+- why find best AR(p) using PACF ? 
+    PACF shows true correlation value between one value & selected lag value.
+    We want to make sure the value that enterred in AR only that has impact (high correlation) towards the current value & reduce noise by removing weak (low correlation) data
+    
+- if ACF plot turn to negative before lag5, we have OVER-DIFFERENCED the data & prediction will be inaccurate. solution is to REDUCE the differencing
+- to solve :
+    under-differenced : AR(p + 1)
+    over-differenced : MA(q + 1)
+
+- MA is error of the lagged forecast
+- ACF tells how many MA terms are required to remove any autocorrelation in the stationarized series

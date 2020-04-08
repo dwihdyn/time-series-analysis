@@ -4,7 +4,7 @@
 
 ### Time series included here :
 - ACF & PACF
-- AR            : assume observations at previous time steps are useful to predict the value at the next time step.
+- AR 
 - MA
 - ARMA
 - ARIMA
