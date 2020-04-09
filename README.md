@@ -5,6 +5,5 @@
 ### Time series included here :
 - ACF & PACF
 - AR 
-- MA
-- ARMA
 - ARIMA
+- SARIMA
