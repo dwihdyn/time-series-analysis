@@ -6,4 +6,5 @@
 - ACF & PACF
 - AR 
 - ARIMA
-- SARIMA
+- SARIMA (coming soon)
+- SARIMAX (coming soon)
