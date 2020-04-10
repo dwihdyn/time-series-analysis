@@ -20,3 +20,11 @@
 
 - MA is error of the lagged forecast
 - ACF tells how many MA terms are required to remove any autocorrelation in the stationarized series
+
+- ARCH can predict variance
+- GARCH(p,q) = ARCH(p) + MA(q) 
+    p : lag variance
+    q : lag residual error
+    Assumptions:
+        1) Change in variance are correlated overtime (use ACF)
+        2) Mean of data variance are known | E(Var(data))
