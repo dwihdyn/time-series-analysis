@@ -26,5 +26,7 @@
     p : lag variance
     q : lag residual error
     Assumptions:
-        1) Change in variance are correlated overtime (use ACF)
+        1) Change in variance are correlated, NOT seasonal overtime (use ACF)
         2) Mean of data variance are known | E(Var(data))
+        
+- White Noise answers When should we stop fitting our model
