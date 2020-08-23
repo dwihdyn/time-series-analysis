@@ -1,8 +1,8 @@
-# PUBLIC REPOSITORY
+# time-series-analysis
 
-## Purpose : To understand implementation of time series better through hands-on practice
+### To understand implementation of time series better through hands-on practice
 
-### Time series included here :
+#### Time series included here :
 - ACF & PACF
 - AR 
 - ARIMA
